@@ -1,0 +1,98 @@
+html{
+background-image: url(https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?cs=srgb&dl=pexels-brett-sayles-1431822.jpg&fm=jpg);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(195, 228, 255, 0.527);
+    color: white;
+}
+
+.header-item{
+    margin-inline: 20px;
+}
+
+#app-title{
+    font-size: large;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    width: 200px;
+    align-items: center;
+}
+
+input{
+    height: 20px;
+    font-size: large;
+}
+
+.card-container{
+    max-width: 400px;
+    height: 600px;
+    min-height: 350px;
+    margin: 20px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(190, 206, 216);
+    box-shadow: 0px 15px rgb(77, 77, 77);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+img{
+    width: 100%;
+    max-height: 300px!important;
+}
+
+.info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h3{
+    font-size: 70px;
+    margin: 0
+}
+
+.desc{
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    background-color: rgba(234, 255, 255, 0.726);
+    color: black;
+}
+
+.socials{
+    color: rgb(0, 0, 0);
+    margin-inline: 20px;
+    height: 100%;
+    width: 50px;
+    transition: color 1.5s;
+}
+.socials:hover{
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+}
