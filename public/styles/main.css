@@ -45,7 +45,7 @@ input{
     position: relative;
     max-width: 400px;
     height: 600px;
-    min-height: 530px;
+    min-height: 570px;
     margin: 20px;
     align-self: center;
     display: flex;
@@ -87,7 +87,9 @@ h3{
 span{
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: start;
+    align-items: center;
 }
 
 .icon, .weather-icon {
@@ -103,6 +105,8 @@ span{
 
 .icon, .sub-info{
     margin-inline: 20px;
+    margin-block: 10px;
+    font-size: larger;
 }
 
 footer{
