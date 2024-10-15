@@ -26,15 +26,17 @@ app.post("/submit", async (req, res) =>{
         const lat = JSON.stringify(place.data[0].lat)
         const lon = JSON.stringify(place.data[0].lon)
         const result = await axios.get("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&appid="+apiKey)
+        const weather = result.data.weather[0].main
 
 
         res.render("index.ejs", {
             temp: result.data.main.temp,
             location: result.data.name,
             light: result.data.visibility,
-            weather: result.data.weather[0].main,
+            weather: weather,
             wind: result.data.wind.speed,
             humidity: result.data.main.humidity,
+
         });
     } catch (error){
         console.log(error);
