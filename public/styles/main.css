@@ -42,9 +42,10 @@ input{
 }
 
 .card-container{
+    position: relative;
     max-width: 400px;
     height: 600px;
-    min-height: 350px;
+    min-height: 530px;
     margin: 20px;
     align-self: center;
     display: flex;
@@ -66,6 +67,7 @@ img{
     width: 100%;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 10px ;
 }
 
 h3{
@@ -73,8 +75,34 @@ h3{
     margin: 0
 }
 
+.location{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .desc{
     font-size: 25px;
+}
+
+span{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+.icon, .weather-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.weather-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon, .sub-info{
+    margin-inline: 20px;
 }
 
 footer{
@@ -89,7 +117,7 @@ footer{
     color: rgb(0, 0, 0);
     margin-inline: 20px;
     height: 100%;
-    width: 50px;
+    width: 40px;
     transition: color 1.5s;
 }
 .socials:hover{
